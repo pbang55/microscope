@@ -14,8 +14,8 @@ var postsData = [
     author: 'Tom Coleman',
     url: 'http://themeteorbook.com'
   }
-]
+];
 
 Template.postsList.helpers({
 	posts: postsData
-})
+});
