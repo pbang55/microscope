@@ -1,4 +1,5 @@
-microscope
+Microscope
 ==========
 
-meteor practice
+Practicing Meteor.
+URL: http://pbangtel.meteor.com/
