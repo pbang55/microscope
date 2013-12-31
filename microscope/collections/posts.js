@@ -21,16 +21,16 @@ Meteor.methods({
 
 		// ensure the user is logged in
 		if (!user)
-			throw new Meteor.Error(401, "You need to login to post new stories");
+			throw new Meteor.Error(401, "You need to login to post new stories.");
 
 		// ensure the post has a title
 		if (!postAttributes.title)
-			throw new Meteor.Error(422, "Please fill in a headline");
+			throw new Meteor.Error(422, "Please fill in a headline.");
 
 		// check that there are no previous posts with the same url
 		if (postAttributes.url && postWithSameLink) {
 			throw new Meteor.Error(302,
-				"This link has already been posted",
+				"This link has already been posted.",
 				postWithSameLink._id);
 		}
 
