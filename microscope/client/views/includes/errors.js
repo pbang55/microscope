@@ -9,4 +9,4 @@ Template.error.rendered = function() {
 	Meteor.defer(function() {
 		Errors.update(error._id, {$set: {seen: true}});
 	});
-};g
+};
